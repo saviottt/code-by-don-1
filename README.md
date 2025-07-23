@@ -4,7 +4,7 @@ BrainBuzz is a fun and interactive quiz website created by Don Savio Thomas for 
 
 Instead of long lessons or boring textbook-style questions, BrainBuzz offers a colorful, user-friendly experience where kids can test their knowledge and enjoy learning at the same time.
 
-🎯 Purpose of the Website
+🎯 Purpose of the Websit:
 The main aim of BrainBuzz is to:
 
   ✅ Make learning exciting for young users
