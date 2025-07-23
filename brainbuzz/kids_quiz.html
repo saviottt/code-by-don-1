@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Kids Quiz</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      padding: 20px;
+      background: #fef6e4;
+      animation: fadeIn 1s ease-in;
+    }
+    h1 {
+      text-align: center;
+      color: #2b2d42;
+    }
+    img {
+      width: 100%;
+      max-height: 600px;
+      object-fit: cover;
+      border-radius: 10px;
+      margin-bottom: 20px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    }
+    .question {
+      background: #ffffff;
+      padding: 15px;
+      margin-bottom: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s;
+    }
+    .question:hover {
+      transform: scale(1.02);
+    }
+    input[type="radio"] {
+      margin-right: 10px;
+      cursor: pointer;
+    }
+    button {
+      padding: 10px 20px;
+      background: #3da9fc;
+      color: white;
+      font-size: 16px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background 0.3s;
+      display: block;
+      margin: 0 auto;
+    }
+    button:hover {
+      background: #1769aa;
+    }
+    #result {
+      margin-top: 20px;
+      font-weight: bold;
+      font-size: 20px;
+      text-align: center;
+      color: crimson;
+      animation: fadeIn 0.8s ease-in;
+    }
+    #pass-page {
+      display: none;
+      text-align: center;
+      animation: fadeIn 0.8s ease-in;
+    }
+    #pass-page h2 {
+      font-size: 28px;
+      color: green;
+      animation: pulse 1.5s infinite;
+    }
+    #pass-page p {
+      font-size: 20px;
+      margin-top: 10px;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes pulse {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.05); }
+      100% { transform: scale(1); }
+    }
+  </style>
+</head>
+<body>
+
+  <div id="quiz-page">
+    <h1>Kids Quiz</h1>
+    <img src="https://static.vecteezy.com/system/resources/thumbnails/022/609/799/small_2x/fun-educational-images-with-educational-materials-funny-kid-flying-on-colorful-pencil-cartoon-vector.jpg" alt="Quiz Banner">
+    <form id="quizForm">
+      <div class="question">
+        1. What color do you get when you mix red and yellow?<br>
+        <input type="radio" name="q1" value="Green"> a) Green<br>
+        <input type="radio" name="q1" value="Orange"> b) Orange<br>
+        <input type="radio" name="q1" value="Purple"> c) Purple<br>
+        <input type="radio" name="q1" value="Blue"> d) Blue<br>
+      </div>
+
+      <div class="question">
+        2. How many legs does a spider have?<br>
+        <input type="radio" name="q2" value="8"> a) 8<br>
+        <input type="radio" name="q2" value="6"> b) 6<br>
+        <input type="radio" name="q2" value="10"> c) 10<br>
+        <input type="radio" name="q2" value="4"> d) 4<br>
+      </div>
+
+      <div class="question">
+        3. Which planet is known as the Red Planet?<br>
+        <input type="radio" name="q3" value="Earth"> a) Earth<br>
+        <input type="radio" name="q3" value="Mars"> b) Mars<br>
+        <input type="radio" name="q3" value="Jupiter"> c) Jupiter<br>
+        <input type="radio" name="q3" value="Venus"> d) Venus<br>
+      </div>
+
+      <div class="question">
+        4. What is the capital of India?<br>
+        <input type="radio" name="q4" value="Mumbai"> a) Mumbai<br>
+        <input type="radio" name="q4" value="Chennai"> b) Chennai<br>
+        <input type="radio" name="q4" value="Delhi"> c) Delhi<br>
+        <input type="radio" name="q4" value="Kolkata"> d) Kolkata<br>
+      </div>
+
+      <div class="question">
+        5. How many days are there in a week?<br>
+        <input type="radio" name="q5" value="5"> a) 5<br>
+        <input type="radio" name="q5" value="7"> b) 7<br>
+        <input type="radio" name="q5" value="6"> c) 6<br>
+        <input type="radio" name="q5" value="4"> d) 4<br>
+      </div>
+
+      <div class="question">
+        6. What do bees make?<br>
+        <input type="radio" name="q6" value="Milk"> a) Milk<br>
+        <input type="radio" name="q6" value="Honey"> b) Honey<br>
+        <input type="radio" name="q6" value="Butter"> c) Butter<br>
+        <input type="radio" name="q6" value="Wax"> d) Wax<br>
+      </div>
+
+      <div class="question">
+        7. Which animal is known as the “King of the Jungle”?<br>
+        <input type="radio" name="q7" value="Tiger"> a) Tiger<br>
+        <input type="radio" name="q7" value="Lion"> b) Lion<br>
+        <input type="radio" name="q7" value="Elephant"> c) Elephant<br>
+        <input type="radio" name="q7" value="Bear"> d) Bear<br>
+      </div>
+
+      <div class="question">
+        8. Which shape has 4 equal sides?<br>
+        <input type="radio" name="q8" value="Triangle"> a) Triangle<br>
+        <input type="radio" name="q8" value="Rectangle"> b) Rectangle<br>
+        <input type="radio" name="q8" value="Square"> c) Square<br>
+        <input type="radio" name="q8" value="Circle"> d) Circle<br>
+      </div>
+
+      <div class="question">
+        9. What do we use to write on a blackboard?<br>
+        <input type="radio" name="q9" value="Pen"> a) Pen<br>
+        <input type="radio" name="q9" value="Pencil"> b) Pencil<br>
+        <input type="radio" name="q9" value="Chalk"> c) Chalk<br>
+        <input type="radio" name="q9" value="Marker"> d) Marker<br>
+      </div>
+
+      <button type="button" onclick="checkAnswers()">Submit</button>
+    </form>
+    <div id="result"></div>
+  </div>
+
+  <div id="pass-page">
+    <h2>🎉 Congratulations! You Passed the Quiz! 🎉</h2>
+    <p>Your score was excellent!</p>
+  </div>
+
+  <script>
+    const correctAnswers = {
+      q1: "Orange",
+      q2: "8",
+      q3: "Mars",
+      q4: "Delhi",
+      q5: "7",
+      q6: "Honey",
+      q7: "Lion",
+      q8: "Square",
+      q9: "Chalk"
+    };
+
+    function checkAnswers() {
+      let score = 0;
+      for (let key in correctAnswers) {
+        const radios = document.getElementsByName(key);
+        for (let i = 0; i < radios.length; i++) {
+          if (radios[i].checked && radios[i].value === correctAnswers[key]) {
+            score++;
+          }
+        }
+      }
+
+      if (score > 5) {
+        document.getElementById('quiz-page').style.display = 'none';
+        document.getElementById('pass-page').style.display = 'block';
+      } else {
+        document.getElementById('result').innerHTML = `❌ <strong>You failed.</strong><br>Your score is ${score}/9. Try again!`;
+        document.getElementById('result').style.color = "crimson";
+      }
+    }
+  </script>
+
+</body>
+</html>

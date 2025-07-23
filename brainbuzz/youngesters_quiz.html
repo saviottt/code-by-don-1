@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Kids Quiz</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      padding: 20px;
+      background: #fef6e4;
+      animation: fadeIn 1s ease-in;
+    }
+    h1 {
+      text-align: center;
+      color: #2b2d42;
+    }
+    img {
+      width: 100%;
+      max-height: 600px;
+      object-fit: cover;
+      border-radius: 10px;
+      margin-bottom: 20px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    }
+    .question {
+      background: #ffffff;
+      padding: 15px;
+      margin-bottom: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s;
+    }
+    .question:hover {
+      transform: scale(1.02);
+    }
+    input[type="radio"] {
+      margin-right: 10px;
+      cursor: pointer;
+    }
+    button {
+      padding: 10px 20px;
+      background: #3da9fc;
+      color: white;
+      font-size: 16px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background 0.3s;
+      display: block;
+      margin: 0 auto;
+    }
+    button:hover {
+      background: #1769aa;
+    }
+    #result {
+      margin-top: 20px;
+      font-weight: bold;
+      font-size: 20px;
+      text-align: center;
+      color: crimson;
+      animation: fadeIn 0.8s ease-in;
+    }
+    #pass-page {
+      display: none;
+      text-align: center;
+      animation: fadeIn 0.8s ease-in;
+    }
+    #pass-page h2 {
+      font-size: 28px;
+      color: green;
+      animation: pulse 1.5s infinite;
+    }
+    #pass-page p {
+      font-size: 20px;
+      margin-top: 10px;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes pulse {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.05); }
+      100% { transform: scale(1); }
+    }
+  </style>
+</head>
+<body>
+
+  <div id="quiz-page">
+    <h1>Youngsters Quiz</h1>
+    <img src="https://static.vecteezy.com/system/resources/previews/021/611/459/non_2x/cute-little-kids-studying-together-cartoon-illustration-vector.jpg" alt="Quiz Banner">
+    <form id="quizForm">
+      <div class="question">1. What is the capital of India?<br><input type="radio" name="q1" value="New Delhi"> New Delhi<br><input type="radio" name="q1" value="Mumbai"> Mumbai<br><input type="radio" name="q1" value="Chennai"> Chennai<br></div>
+      <div class="question">2. How many legs does a spider have?<br><input type="radio" name="q2" value="8"> 8<br><input type="radio" name="q2" value="6"> 6<br><input type="radio" name="q2" value="10"> 10<br></div>
+      <div class="question">3. Which planet is known as the Red Planet?<br><input type="radio" name="q3" value="Mars"> Mars<br><input type="radio" name="q3" value="Venus"> Venus<br><input type="radio" name="q3" value="Earth"> Earth<br></div>
+      <div class="question">4. What sound do bees make?<br><input type="radio" name="q4" value="Buzz"> Buzz<br><input type="radio" name="q4" value="Hiss"> Hiss<br><input type="radio" name="q4" value="Moo"> Moo<br></div>
+      <div class="question">5. What color do you get when you mix red and yellow?<br><input type="radio" name="q5" value="Orange"> Orange<br><input type="radio" name="q5" value="Purple"> Purple<br><input type="radio" name="q5" value="Blue"> Blue<br></div>
+      <div class="question">6. How many days are there in a leap year?<br><input type="radio" name="q6" value="366"> 366<br><input type="radio" name="q6" value="365"> 365<br><input type="radio" name="q6" value="360"> 360<br></div>
+      <div class="question">7. Which is the fastest land animal?<br><input type="radio" name="q7" value="Cheetah"> Cheetah<br><input type="radio" name="q7" value="Lion"> Lion<br><input type="radio" name="q7" value="Horse"> Horse<br></div>
+      <div class="question">8. Which shape has 4 equal sides?<br><input type="radio" name="q8" value="Square"> Square<br><input type="radio" name="q8" value="Rectangle"> Rectangle<br><input type="radio" name="q8" value="Triangle"> Triangle<br></div>
+      <div class="question">9. Which planet is the closest to the sun?<br><input type="radio" name="q9" value="Mercury"> Mercury<br><input type="radio" name="q9" value="Venus"> Venus<br><input type="radio" name="q9" value="Earth"> Earth<br></div>
+      <div class="question">10. Which festival is known as the Festival of Lights?<br><input type="radio" name="q10" value="Diwali"> Diwali<br><input type="radio" name="q10" value="Holi"> Holi<br><input type="radio" name="q10" value="Eid"> Eid<br></div>
+      <div class="question">11. How many months are in a year?<br><input type="radio" name="q11" value="12"> 12<br><input type="radio" name="q11" value="10"> 10<br><input type="radio" name="q11" value="11"> 11<br></div>
+      <div class="question">12. Which two animals need to make food?<br><input type="radio" name="q12" value="None"> None<br><input type="radio" name="q12" value="All"> All<br><input type="radio" name="q12" value="Plants"> Plants<br></div>
+      <div class="question">13. What is 5 + 3 = ?<br><input type="radio" name="q13" value="8"> 8<br><input type="radio" name="q13" value="6"> 6<br><input type="radio" name="q13" value="7"> 7<br></div>
+      <div class="question">14. Which animal is known as the King of the Jungle?<br><input type="radio" name="q14" value="Lion"> Lion<br><input type="radio" name="q14" value="Tiger"> Tiger<br><input type="radio" name="q14" value="Elephant"> Elephant<br></div>
+      <div class="question">15. Which human organ do we use to smell?<br><input type="radio" name="q15" value="Nose"> Nose<br><input type="radio" name="q15" value="Eyes"> Eyes<br><input type="radio" name="q15" value="Ears"> Ears<br></div>
+      <button type="button" onclick="checkAnswers()">Submit</button>
+    </form>
+    <div id="result"></div>
+  </div>
+
+  <div id="pass-page">
+    <h2>🎉 Congratulations! You Passed the Quiz! 🎉</h2>
+    <p>Your score was excellent!</p>
+  </div>
+
+  <script>
+    const correctAnswers = {
+      q1: "New Delhi", q2: "8", q3: "Mars", q4: "Buzz", q5: "Orange",
+      q6: "366", q7: "Cheetah", q8: "Square", q9: "Mercury", q10: "Diwali",
+      q11: "12", q12: "Plants", q13: "8", q14: "Lion", q15: "Nose"
+    };
+    function checkAnswers() {
+      let score = 0;
+      for (let key in correctAnswers) {
+        const radios = document.getElementsByName(key);
+        for (let i = 0; i < radios.length; i++) {
+          if (radios[i].checked && radios[i].value === correctAnswers[key]) {
+            score++;
+          }
+        }
+      }
+      if (score > 5) {
+        document.getElementById('quiz-page').style.display = 'none';
+        document.getElementById('pass-page').style.display = 'block';
+      } else {
+        document.getElementById('result').innerHTML = `❌ <strong>You failed.</strong><br>Your score is ${score}/15. Try again!`;
+        document.getElementById('result').style.color = "crimson";
+      }
+    }
+  </script>
+
+</body>
+</html>
