@@ -7,41 +7,41 @@ Instead of long lessons or boring textbook-style questions, BrainBuzz offers a c
 🎯 Purpose of the Website
 The main aim of BrainBuzz is to:
 
-✅ Make learning exciting for young users
+  ✅ Make learning exciting for young users
 
-✅ Encourage kids to think, explore, and grow
+  ✅ Encourage kids to think, explore, and grow
 
-✅ Provide a simple quiz-based platform to test knowledge
+  ✅ Provide a simple quiz-based platform to test knowledge
 
-✅ Inspire curiosity and a love for learning
+  ✅ Inspire curiosity and a love for learning
 
 Whether it's science, math, general knowledge, or simple fun facts — BrainBuzz offers the perfect starting point for kids and students to discover more about the world around them.
 
 🖼️ What’s on the Homepage?
 The homepage is simple, clean, and welcoming. Here’s what you’ll find:
 
-🧠 A bold BrainBuzz title at the top
+  🧠 A bold BrainBuzz title at the top
 
-💬 A catchy tagline: "Test your knowledge and challenge your mind with every question you face."
+  💬 A catchy tagline: "Test your knowledge and challenge your mind with every question you face."
 
-🎨 A logo image that reflects the BrainBuzz identity
+  🎨 A logo image that reflects the BrainBuzz identity
 
-🚀 A slogan just below the logo: “Buzz Your Potential”
+  🚀 A slogan just below the logo: “Buzz Your Potential”
 
-📖 An About section that clearly explains what BrainBuzz is and why it was created
+  📖 An About section that clearly explains what BrainBuzz is and why it was created
 
-🔘 Two large, clickable image buttons — one for Kids Quizzes and one for Student Quizzes
+  🔘 Two large, clickable image buttons — one for Kids Quizzes and one for Student Quizzes
 
 These buttons make it super easy for users to get started and pick the right quiz level.
 
 🛠️ How It Was Built
 BrainBuzz is built entirely with:
 
-🧱 HTML5 for structure
+  🧱 HTML5 for structure
 
-🎨 CSS3 for styling and layout
+  🎨 CSS3 for styling and layout
 
-📱 Responsive design using Flexbox for mobile-friendliness
+  📱 Responsive design using Flexbox for mobile-friendliness
 
 No JavaScript or backend is added yet — making it fast, lightweight, and beginner-friendly.
 
@@ -55,17 +55,17 @@ BrainBuzz is not just a project — it’s a small but meaningful step toward bu
 🔮 What’s Coming Next?
 Here’s what I plan to add to BrainBuzz in the future:
 
-🧩 Fully working quiz pages for each category
+  🧩 Fully working quiz pages for each category
 
-🧠 A scoring system to track performance
+  🧠 A scoring system to track performance
 
-🧒 User profiles (especially for kids)
+  🧒 User profiles (especially for kids)
 
-🏆 Leaderboards to encourage healthy competition
+  🏆 Leaderboards to encourage healthy competition
 
-🎓 Subject-based quiz levels (easy, medium, hard)
+  🎓 Subject-based quiz levels (easy, medium, hard)
 
-🌐 Hosting on GitHub Pages or Vercel with a live link
+  🌐 Hosting on GitHub Pages or Vercel with a live link
 
 🙌 Final Thoughts
 BrainBuzz is a creative and educational website for young learners who want to learn smarter, not harder. It’s a great start to a bigger idea, and I'm excited to keep building and improving it.
